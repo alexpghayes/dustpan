@@ -1,0 +1,18 @@
+Package: dustpan
+Type: Package
+Title: Example of Exporting Custom Tidy Methods
+Version: 0.1.0
+Authors@R: 
+    person("Alex", "Hayes", email = "alexpghayes@gmail.com", role = c("aut", "cre"))
+Maintainer: Alex Hayes <alexpghayes@gmail.com>
+Description: Test test.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    modelgenerics,
+    tibble
+RoxygenNote: 6.0.1.9000
+Suggests: 
+    modeltests,
+    testthat
