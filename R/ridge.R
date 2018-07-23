@@ -14,9 +14,9 @@
 #'
 dusty <- function(formula, data, lambda = 0.01) {
 
-  mf <- model.frame(formula, data)
-  x <- model.matrix(mf, data)
-  y <- model.response(mf)
+  mf <- stats::model.frame(formula, data)
+  x <- stats::model.matrix(mf, data)
+  y <- stats::model.response(mf)
 
   beta <- solve(crossprod(x) + lambda * diag(ncol(x))) %*% crossprod(x, y)
 
